@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Карта Центрального федерального округа</title>
+
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <!-- Choropleth -->
+    <script src="https://unpkg.com/leaflet-choropleth/dist/choropleth.js"></script>
+
+    <!-- Группированный контроль слоёв -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-groupedlayercontrol/dist/leaflet.groupedlayercontrol.min.css"/>
+    <script src="https://unpkg.com/leaflet-groupedlayercontrol/dist/leaflet.groupedlayercontrol.min.js"></script>
+
+    <!-- EasyButton + Search + Fullscreen -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.css">
+    <script src="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-search/dist/leaflet-search.min.css" />
+    <script src="https://unpkg.com/leaflet-search/dist/leaflet-search.min.js"></script>
+    <link href="https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css" rel="stylesheet" />
+    <script src="https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <!-- Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+
+    <!-- Твой стиль -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Шапка -->
+    <header id="header">
+        <h1>Карта Центрального федерального округа</h1>
+    </header>
+
+    <!-- Основной контент: карта слева, текст справа -->
+    <div id="main-container">
+        <div id="map-container">
+            <div id="map"></div>
+        </div>
+
+        <div id="text-container">
+            <h2>Центральный федеральный округ</h2>
+            <p><strong>Аббревиатура — ЦФО</strong></p>
+            <p>Центральный федеральный округ — один из восьми федеральных округов Российской Федерации. Образован указом президента РФ от 13 мая 2000 года. Административный центр — город Москва.</p>
+
+            <h2>Основные характеристики</h2>
+            <p>Территория округа составляет 650 205 км² (3,8 % от территории РФ). По этому показателю ЦФО занимает последнее место среди федеральных округов.</p>
+            <p>Высшая точка — 347 м (Среднерусская возвышенность).</p>
+
+            <h2>Границы</h2>
+            <p><strong>Внешние:</strong> на западе — с Беларусью, на юго-западе — с Украиной.<br>
+               <strong>Внутренние:</strong> на юге — с Южным ФО, на востоке — с Приволжским ФО, на севере — с Северо-Западным ФО.</p>
+
+            <h2>Автор работы</h2>
+            <p>Карта подготовлена студентом <strong>А.М. Егоровым</strong><br>МИИГАиК, 2025</p>
+        </div>
+    </div>
+
+    <!-- Подвал -->
+    <footer id="footer">
+        <p>Карта подготовлена студентом А.М. Егоровым &copy; 2025</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
